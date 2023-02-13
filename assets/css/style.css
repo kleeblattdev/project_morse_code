@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    padding: 2rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textInput{
+    padding: 0.5rem 4rem;
+}
+
+button{
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 20px;
+    background: #6feeb6;
+    background: linear-gradient(0deg, #6feeb6 0%, #e1e4fe 50%, #4ed1e0 100%);
+}
