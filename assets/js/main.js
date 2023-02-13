@@ -42,31 +42,27 @@ const morseAlphabet = [
 const textInput = document.querySelector('#textInput');
 const button = document.querySelector('button');
 
-let letterArray = [];
-let inputLetterArray = [];
-let morseCodeArray = [];
-let morseCode = [];
-
-morseAlphabet.forEach((element) =>{
-    letterArray.push(element.letter);
-})
-
-morseAlphabet.forEach((element) =>{
-    morseCodeArray.push(element.morseCode);
-})
-
 //output
 
 const morseCodeOutput = document.querySelector('#morseCodeOutput');
 const textOutput = document.querySelector('#textOutput');
 
+//Variables for functions
+let letterArray = [];
+let inputLetterArray = [];
+let morseCode = [];
+
 //function 
+
+morseAlphabet.forEach((element) =>{
+    letterArray.push(element.letter);
+})
 
 //function Button
 button.addEventListener('click',(event) => {
     event.preventDefault();
     button.style.display = 'none';
-    
+
     let text = (textInput.value).toUpperCase();
 
     for (let i = 0; i < text.length ; i++){
